@@ -1,5 +1,5 @@
 Output
 
-![Myntra_clone1](https://github.com/YashvardhanPabari/Myntra-Clone-Frontend/src/front-layout/Myntra home.png)
+![Myntra_clone1](https://raw.githubusercontent.com/YashvardhanPabari/Myntra-Clone-Frontend/main/src/front-layout/Myntra%20home.png)
 
-![Myntra_clone2](https://github.com/YashvardhanPabari/Myntra-Clone-Frontend/src/front-layout/Myntra cart.png)
+![Myntra_clone2](https://raw.githubusercontent.com/YashvardhanPabari/Myntra-Clone-Frontend/main/src/front-layout/Myntra%20cart.png)
