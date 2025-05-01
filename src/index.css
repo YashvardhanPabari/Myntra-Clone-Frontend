@@ -15,6 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #b6b1b1;
+  z-index: 1000;
 }
 .myntra_home {
   height: 45px;
@@ -36,6 +37,7 @@ header {
   justify-content: space-evenly;
   gap: 0.5rem;
 }
+
 .nav_bar a {
   font-size: 14px;
   letter-spacing: 0.3px;

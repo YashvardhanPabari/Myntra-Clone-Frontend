@@ -102,6 +102,59 @@
     top: -8px;
     right: -12px;
   }
+
+  .bag-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bag-items-container {
+    border-right: none;
+  }
+
+  .bag-summary {
+    width: 60%;
+  }
+
+  .bag-page {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .bag-items-container,
+  .bag-summary {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .bag-item-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 12px;
+  }
+
+  .item-left-part {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .item-right-part {
+    margin: 12px 0 0 0;
+    padding-left: 0;
+  }
+
+  .remove-from-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+  }
 }
 
 /* Mobile Phones */
