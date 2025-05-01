@@ -24,11 +24,17 @@ header {
 }
 .action_bar {
   margin-right: 4%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .nav_bar {
   display: flex;
-  min-width: 500px;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-evenly;
+  gap: 0.5rem;
 }
 .nav_bar a {
   font-size: 14px;
@@ -37,7 +43,7 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 28px 0;
+  /* padding: 28px 0; */
   /* border-bottom: 5px solid #ffffff; */
 }
 .nav_bar a:hover {
@@ -52,8 +58,7 @@ header {
 
 .search_bar {
   height: 40px;
-  min-width: 200px;
-  width: 30%;
+  width: 100%; /* or 30% on desktop with media query */
   display: flex;
   align-items: center;
 }
@@ -86,6 +91,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.menu_toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 /* Main section */
@@ -146,7 +159,7 @@ header {
 
 .copyright {
   color: #94969f;
-  text-align: end;
+  text-align: center;
   padding: 15px;
 }
 
@@ -223,23 +236,28 @@ header {
   border-radius: 10px;
   cursor: pointer;
 }
-.bag-item-count {
-  background-color: #f16565;
-  white-space: nowrap;
-  text-align: center;
-  line-height: 18px;
-  padding: 0 6px;
-  height: 18px;
+.bag_container {
   position: relative;
-  border-radius: 50%;
-  font-size: 12px;
-  color: #fff;
-  left: 13px;
-  top: -44px;
-  font-weight: 700;
-  cursor: pointer;
+
+  /* Ensures the count is positioned within the container */
 }
 
+.bag-item-count {
+  position: absolute;
+  top: -0.7em;
+  right: -1em;
+  background-color: #ff3f6c;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px; /* Fixed width */
+  height: 18px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Makes it circular */
+  line-height: 18px; /* Ensures proper text alignment */
+}
 .action_container {
   text-decoration: none;
 }

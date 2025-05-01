@@ -1,0 +1,171 @@
+@media screen and (max-width: 1024px) {
+  .menu_toggle {
+    display: block; /* Show menu button */
+  }
+
+  .nav_bar {
+    display: none; /* Hide nav by default */
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Below header */
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav_bar.open {
+    display: flex; /* Show when open */
+    position: absolute;
+    z-index: 10;
+  }
+
+  .nav_bar a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Stack the search bar below the logo & menu */
+  .search_bar {
+    width: 90%;
+    margin: 10px 10px;
+  }
+
+  /* Center the action bar and reduce spacing */
+  .action_bar {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .action_container {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  /* Make the bag count look better */
+  .bag-item-count {
+    font-size: 12px;
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    right: -11px;
+  }
+}
+
+/* Smaller Tablets & Large Phones */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo_container {
+    margin: 0;
+    text-align: center;
+  }
+
+  .search_bar {
+    width: 100%;
+    /* margin: 10px 0; */
+  }
+
+  .action_bar {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nav_bar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav_bar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav_bar a:last-child {
+    border-bottom: none; /* Remove bottom border from last item */
+  }
+
+  .bag-item-count {
+    top: -8px;
+    right: -12px;
+  }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 500px) {
+  /* Make the header more compact */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* Center logo */
+  .logo_container {
+    margin: 0 auto;
+  }
+
+  /* Hide default nav and use menu toggle */
+  .nav_bar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 7px;
+  }
+
+  .nav_bar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Improve search bar layout */
+  .search_bar {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Center action bar icons */
+  .action_bar {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer_column {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_column h3 {
+    font-size: 16px; /* increase heading size */
+  }
+
+  .footer_column a {
+    font-size: 16px; /* increase link size slightly */
+  }
+}
